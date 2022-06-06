@@ -1,0 +1,29 @@
+<div class="container jumbotron">
+    Enter time interval in milisec :
+    <input type="text" [(ngModel)]="timerInterval" placeholder="Enter time interval in milisec" />
+    <br />
+
+    {{timerInterval}}
+
+    <fieldset *ngFor="let choice of choices; let last= last;">
+        Enter Folder Name:
+        <input type="text" [(ngModel)]="choice.name" name="" placeholder="Enter Folder Name: ">
+        <button class="lalChaukor" [hidden]="!last" (click)="removeChoice()">-</button>
+        <button class="lalChaukor" [hidden]="!last" (click)="addNewChoice()">+</button>
+    </fieldset>
+
+    Select Extensions :-
+    <span *ngFor="let fruit of fruits">
+        <input type='checkbox' value="{{fruit.name}}" [(ngModel)]='fruit.checked'> {{fruit.name}}
+        &nbsp;&nbsp;&nbsp;&nbsp;
+    </span>
+
+    <button class="lalChaukor" (click)='loadMultiResult()'>
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+
+    <div id="choicesDisplay">
+        {{ choices | json }} <br> {{ fruits | json}}
+    </div>
+    
+</div>
