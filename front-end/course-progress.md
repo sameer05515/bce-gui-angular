@@ -37,3 +37,13 @@ https://github.com/FortAwesome/angular-fontawesome
 
         ng serve --port 4202
 
+# Open popups
+
+Angular Material 9 Modal Popup Example https://www.freakyjolly.com/angular-material-modal-popup-example/
+
+How to open popup using Angular and Bootstrap ? https://www.geeksforgeeks.org/how-to-open-popup-using-angular-and-bootstrap/
+
+
+
+
+

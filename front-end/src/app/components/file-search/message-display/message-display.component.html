@@ -1,0 +1,14 @@
+<div>
+    <span *ngIf="messageObject.type=='load'" class="loadMessage">
+        {{messageObject.message}}
+    </span>
+    
+    <span *ngIf="messageObject.type=='success'" class="successMessage">
+        {{messageObject.message}}
+    </span>
+    
+    <span *ngIf="messageObject.type=='fail'" class="errorMessage">
+        {{messageObject.message}}
+    </span>
+    
+</div>

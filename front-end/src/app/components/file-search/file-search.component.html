@@ -25,5 +25,15 @@
     <div id="choicesDisplay">
         {{ choices | json }} <br> {{ fruits | json}}
     </div>
-    
+
+    <app-message-display *ngFor="let msg of errorMessage" [msg]="msg">
+    </app-message-display>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <app-file-item *ngFor="let fileName of fileNames" [file]="fileName">
+            </app-file-item>
+        </div>
+    </div>
+
 </div>

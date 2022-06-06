@@ -1,0 +1,21 @@
+<div>
+    <a>
+        <!-- [{{$index + 1}}] -->
+        <!-- data-ng-model="testAnchor[this]" data-ng-click="ppp('http://127.0.0.1:8090/bce-gui/JSP/FileService/my.jsp?documentId='+file.filePath,file.filePath,$index,file)" -->
+        <!-- <span class="loadMessage">
+        {{file.showValue}} 
+        </span> -->
+    
+        <!-- data-ng-class="{selectedFileClass: file.filePath == filePathSelectedVote}"s -->
+    
+    <span class="loadMessage">
+            {{file.name|shorten}}
+        </span> |
+    <span class="successMessage">
+            {{file.filePath}}
+        </span> |
+    <span class="nameOfFolder">
+            {{file.parentFile}}
+        </span>
+    </a>
+</div>
