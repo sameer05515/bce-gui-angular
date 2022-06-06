@@ -3,6 +3,7 @@ npm install -g @angular/cli@latest
 
 # check angular version
 
+
     ng version
 
 # to add bootstrap
@@ -35,3 +36,4 @@ https://github.com/FortAwesome/angular-fontawesome
 # to run angular application on different port
 
         ng serve --port 4202
+
